@@ -1,0 +1,21 @@
+## Copyright 2020 Paingha Joe Alagoa. All rights reserved.
+## Use of this source code is governed by a BSD-style
+## license that can be found in the LICENSE file.
+
+version: "3.7"
+services:
+
+  adminpanel:
+    container_name: frontend
+    build:
+      context: ./frontend
+      dockerfile: ./Dockerfile
+      args:
+        service: frontend
+    restart: on-failure
+    expose:
+      - "3000"
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: "development"

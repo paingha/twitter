@@ -1,0 +1,26 @@
+.navhover:hover{
+  stroke: #1DA1F2!important;
+}
+.textarea {
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 6px 6px 6px 6px;
+}
+.textarea {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  resize: vertical;
+  min-height: 3em;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.textarea[contenteditable]:empty::before {
+  content: "What's happening?";
+  color: gray;
+}
+.tweet-icon:hover{
+  cursor: pointer;
+}
