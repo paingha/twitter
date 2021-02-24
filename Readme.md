@@ -3,7 +3,7 @@
 ![Twitter Follow](https://img.shields.io/twitter/follow/painghajnr?style=social)
 ![GitHub repo size](https://img.shields.io/github/repo-size/paingha/twitter?style=plastic)
 
-
+My attempt to design the Twitter UI and Microservices Backend from scratch in React JS for Frontend and Golang for Backend. The Backend is gRPC based. I will also keep track on lessons learned while building this project.
 
 ![](https://raw.githubusercontent.com/paingha/capstone/master/capstone-github-image.PNG?token=AB6SB22F5FXRNOWSR73EUGK72KRP2)
 
