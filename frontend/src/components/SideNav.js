@@ -27,27 +27,27 @@ const SideNav=(props)=>{
             height="100%"
             display="flex"
             flexDirection="column"
-            justifyContent={["center", "center", "center", "center", "flex-start"]}
+            justifyContent={["center", "center", "flex-start", "flex-start", "flex-start"]}
             alignContent="center"
             alignItems="center"
             pt="4"
             pb="4"
             >
             <Box
-                w={["90%", "90%", "50%", "65%"]}
+                w={["90%", "90%", "90%", "80%", "85%"]}
                 h="95%"
                 display="flex"
                 flexDirection="column"
                 justifyContent="flex-start"
                 alignContent="center"
-                alignItems={["center", "center", "center", "center", "flex-start"]}
+                alignItems={["center", "center", "center", "flex-start", "flex-start"]}
                 >
             <Box
-                w={["90%", "90%", "50%", "50%"]}
+                w={["90%", "90%", "50%", "50%", "50%"]}
                 h="8%"
                 display="flex"
                 flexDirection="row"
-                justifyContent={["center", "flex-start"]}
+                justifyContent={["center", "center", "center", "flex-start", "flex-start"]}
                 alignContent="center"
                 alignItems="flex-start"
                 >
@@ -65,7 +65,7 @@ const SideNav=(props)=>{
                 h={["8%"]}
                 display="flex"
                 flexDirection="row"
-                justifyContent={["center", "flex-start"]}
+                justifyContent={["center", "center", "center", "flex-start", "flex-start"]}
                 alignContent="center"
                 alignItems="center"
                 cursor="pointer"
@@ -77,12 +77,12 @@ const SideNav=(props)=>{
                 >
                 <Box
                     ml={["0", "0", "0", "0", "2"]}
-                    mr={["0", "0", "0", "0", "6"]}
+                    mr={["0", "0", "0", "6", "6"]}
                     >
                     <HomeIcon color="#1DA1F2" />
                 </Box>
                 <Box
-                    display={["none", "none", "none", "none", "block"]}
+                    display={["none", "none", "none", "block", "block"]}
                     >
                     <Heading as="h4" size="md" color="#1DA1F2">
                       Home
@@ -94,7 +94,7 @@ const SideNav=(props)=>{
                 h={["8%"]}
                 display="flex"
                 flexDirection="row"
-                justifyContent={["center", "flex-start"]}
+                justifyContent={["center", "center", "center", "flex-start", "flex-start"]}
                 alignContent="center"
                 alignItems="center"
                 cursor="pointer"
@@ -104,15 +104,16 @@ const SideNav=(props)=>{
                     color: "#1DA1F2"
                   }}
                 ref={hoverRef}
+                mt={1}
                 >
                 <Box
                     ml={["0", "0", "0", "0", "2"]}
-                    mr={["0", "0", "0", "0", "6"]}
+                    mr={["0", "0", "0", "6", "6"]}
                     >
                     <HashTagIcon color={isHovered? "#1DA1F2": "#000000"} />
                 </Box>
                 <Box
-                    display={["none", "none", "none", "none", "block"]}
+                    display={["none", "none", "none", "block", "block"]}
                     >
                     <Heading as="h4" size="md">
                       Explore
@@ -124,7 +125,7 @@ const SideNav=(props)=>{
                 h={["8%"]}
                 display="flex"
                 flexDirection="row"
-                justifyContent={["center", "flex-start"]}
+                justifyContent={["center", "center", "center", "flex-start", "flex-start"]}
                 alignContent="center"
                 alignItems="center"
                 cursor="pointer"
@@ -134,15 +135,16 @@ const SideNav=(props)=>{
                     color: "#1DA1F2"
                   }}
                 ref={notifRef}
+                mt={1}
                 >
                 <Box
                     ml={["0", "0", "0", "0", "2"]}
-                    mr={["0", "0", "0", "0", "6"]}
+                    mr={["0", "0", "0", "6", "6"]}
                     >
                     <NotificationIcon color={notifHovered? "#1DA1F2": "#000000"}/>
                 </Box>
                 <Box
-                    display={["none", "none", "none", "none", "block"]}
+                    display={["none", "none", "none", "block", "block"]}
                     >
                     <Heading as="h4" size="md">
                       Notifications
@@ -154,7 +156,7 @@ const SideNav=(props)=>{
                 h={["8%"]}
                 display="flex"
                 flexDirection="row"
-                justifyContent={["center", "flex-start"]}
+                justifyContent={["center", "center", "center", "flex-start", "flex-start"]}
                 alignContent="center"
                 alignItems="center"
                 cursor="pointer"
@@ -164,15 +166,16 @@ const SideNav=(props)=>{
                     color: "#1DA1F2"
                   }}
                   ref={messageRef}
+                mt={1}
                 >
                 <Box
                     ml={["0", "0", "0", "0", "2"]}
-                    mr={["0", "0", "0", "0", "6"]}
+                    mr={["0", "0", "0", "6", "6"]}
                     >
                     <MailIcon color={messageHovered? "#1DA1F2": "#000000"}/>
                 </Box>
                 <Box
-                    display={["none", "none", "none", "none", "block"]}
+                    display={["none", "none", "none", "block", "block"]}
                     >
                     <Heading as="h4" size="md">
                       Messages
@@ -184,7 +187,7 @@ const SideNav=(props)=>{
                 h={["8%"]}
                 display="flex"
                 flexDirection="row"
-                justifyContent={["center", "flex-start"]}
+                justifyContent={["center", "center", "center", "flex-start", "flex-start"]}
                 alignContent="center"
                 alignItems="center"
                 cursor="pointer"
@@ -194,15 +197,16 @@ const SideNav=(props)=>{
                     color: "#1DA1F2"
                   }}
                   ref={bookmarkRef}
+                mt={1}
                 >
                 <Box
                     ml={["0", "0", "0", "0", "2"]}
-                    mr={["0", "0", "0", "0", "6"]}
+                    mr={["0", "0", "0", "6", "6"]}
                     >
                     <BookmarkIcon color={bookmarkHovered? "#1DA1F2": "#000000"}/>
                 </Box>
                 <Box
-                    display={["none", "none", "none", "none", "block"]}
+                    display={["none", "none", "none", "block", "block"]}
                     >
                     <Heading as="h4" size="md">
                       Bookmarks
@@ -214,7 +218,7 @@ const SideNav=(props)=>{
                 h={["8%"]}
                 display="flex"
                 flexDirection="row"
-                justifyContent={["center", "flex-start"]}
+                justifyContent={["center", "center", "center", "flex-start", "flex-start"]}
                 alignContent="center"
                 alignItems="center"
                 cursor="pointer"
@@ -224,15 +228,16 @@ const SideNav=(props)=>{
                     color: "#1DA1F2"
                   }}
                   ref={listRef}
+                mt={1}
                 >
                 <Box
                     ml={["0", "0", "0", "0", "2"]}
-                    mr={["0", "0", "0", "0", "6"]}
+                    mr={["0", "0", "0", "6", "6"]}
                     >
                     <ListIcon color={listHovered? "#1DA1F2": "#000000"}/>
                 </Box>
                 <Box
-                    display={["none", "none", "none", "none", "block"]}
+                    display={["none", "none", "none", "block", "block"]}
                     >
                     <Heading as="h4" size="md">
                       Lists
@@ -244,7 +249,7 @@ const SideNav=(props)=>{
                 h={["8%"]}
                 display="flex"
                 flexDirection="row"
-                justifyContent={["center", "flex-start"]}
+                justifyContent={["center", "center", "center", "flex-start", "flex-start"]}
                 alignContent="center"
                 alignItems="center"
                 cursor="pointer"
@@ -254,15 +259,16 @@ const SideNav=(props)=>{
                     color: "#1DA1F2"
                   }}
                   ref={profileRef}
+                mt={1}
                 >
                 <Box
                     ml={["0", "0", "0", "0", "2"]}
-                    mr={["0", "0", "0", "0", "6"]}
+                    mr={["0", "0", "0", "6", "6"]}
                     >
                     <UserIcon color={profileHovered? "#1DA1F2": "#000000"}/>
                 </Box>
                 <Box
-                    display={["none", "none", "none", "none", "block"]}
+                    display={["none", "none", "none", "block", "block"]}
                     >
                     <Heading as="h4" size="md">
                       Profile
@@ -274,7 +280,7 @@ const SideNav=(props)=>{
                 h={["9%"]}
                 display="flex"
                 flexDirection="row"
-                justifyContent={["center", "flex-start"]}
+                justifyContent={["center", "center", "center", "flex-start", "flex-start"]}
                 alignContent="center"
                 alignItems="center"
                 cursor="pointer"
@@ -284,15 +290,16 @@ const SideNav=(props)=>{
                     color: "#1DA1F2"
                   }}
                   ref={moreRef}
+                mt={1}
                 >
                 <Box
                     ml={["0", "0", "0", "0", "2"]}
-                    mr={["0", "0", "0", "0", "6"]}
+                    mr={["0", "0", "0", "6", "6"]}
                     >
                     <MoreDot color={moreHovered? "#1DA1F2": "#000000"}/>
                 </Box>
                 <Box
-                    display={["none", "none", "none", "none", "block"]}
+                    display={["none", "none", "none", "block", "block"]}
                     >
                     <Heading as="h4" size="md">
                       More
@@ -300,20 +307,20 @@ const SideNav=(props)=>{
                 </Box>
             </Box>
             <Box
-                w={["70%", "70%", "70%", "70%", "110%"]}
+                w={["70%", "70%", "70%", "95%", "90%"]}
                 h="8%"
                 display="flex"
                 flexDirection="row"
                 justifyContent="center"
                 alignContent="center"
                 alignItems="flex-start"
-                mt={2}
-                ml={["0", "0", "0", "0", "-8px"]}
+                mt={4}
+                ml={["0", "0", "0", "-8px", "-8px"]}
                 >
-                <Button display={["none", "none", "none", "none", "block"]} boxShadow="lg" backgroundColor="#1DA1F2" color="#ffffff" width={["50px", "100%"]} height="50px" borderRadius={["100%", "25px"]}>
+                <Button display={["none", "none", "none", "block", "block"]} boxShadow="lg" backgroundColor="#1DA1F2" color="#ffffff" width={["50px", "50%", "100%", "100%", "100%"]} height="50px" borderRadius={["100%", "100%", "100%", "25px", "25px"]}>
                   Tweet
                 </Button>
-                <Button display={["block", "block", "block", "block", "none"]} boxShadow="lg" backgroundColor="#1DA1F2" color="#ffffff" width={["40px", "40px"]} height="40px" borderRadius={["40px", "40px"]}>
+                <Button display={["block", "block", "block", "none", "none"]} boxShadow="lg" backgroundColor="#1DA1F2" color="#ffffff" width={["40px", "40px"]} height="40px" borderRadius={["40px", "40px"]}>
                   T
                 </Button>
             </Box>
@@ -328,7 +335,7 @@ const SideNav=(props)=>{
                 alignItems="center"
                 mb="2"
                 pr="4"
-                pl="22%"
+                pl={["22%", "34%", "34%", "10%", "9%"]}
                 >
             <Box
                 display="flex"
@@ -338,7 +345,7 @@ const SideNav=(props)=>{
                 alignItems="center"
                 >
                 <img style={{borderRadius: "50%"}} width={40} height={40} src="https://pbs.twimg.com/profile_images/1348861517664555010/-FBxJ5h8_normal.jpg" />
-                <Box ml="2" display={["none", "none", "none", "none", "block"]}>
+                <Box ml="2" display={["none", "none", "none", "block", "block"]}>
                     <Heading as="h6" size="sm">
                       Joe Alagoa
                     </Heading>
@@ -346,7 +353,7 @@ const SideNav=(props)=>{
                 </Box>
                 
             </Box>
-            <Box display={["none", "none", "none", "none", "block"]} alignSelf="flex-end">
+            <Box display={["none", "none", "none", "block", "block"]} alignSelf="flex-end">
                 <MoreIcon color="#000000" />
             </Box>
             </Box>

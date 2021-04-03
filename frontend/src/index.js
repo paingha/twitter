@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Router from './Router';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider, extendTheme } from "@chakra-ui/react"
 import customTheme from "./theme"
@@ -11,7 +11,7 @@ const theme = extendTheme({ customTheme })
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      <App />
+      <Router />
     </ChakraProvider>
   </React.StrictMode>,
   document.getElementById('root')
